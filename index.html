@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>close btn</title>
+	<link rel="stylesheet" type="text/css" href="hideable.css">
+
+	<style type="text/css">
+		body {
+			font-family: sans-serif;
+			width: 400px;
+			margin: 2em auto;
+		}
+
+		.ll-hideable {
+			margin-bottom: 1em;
+		}
+
+		.ll-hideable-content {
+			padding: 1em 2em 1em 1em;
+			background: #d9edf7;
+			border: 1px solid #bce8f1;
+			border-radius: 3px;
+			color: #3a87ad;
+		}
+
+		.success .ll-hideable-content {
+			background-color: #dff0d8;
+		  border-color: #d6e9c6;
+		  color: #468847;
+		}
+
+		.ll-hideable-close-label {
+			color: #3a87ad;
+			opacity: .4;
+			transition: opacity .5s;
+		}
+
+		.ll-hideable-close-label:hover {
+			opacity: 1;
+		}
+
+		.success .ll-hideable-close-label {
+		  color: #468847;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="ll-hideable info">
+		<input type="checkbox" id="ll-hideable-close-1" class="ll-hideable-close" />
+		<label for="ll-hideable-close-1" class="ll-hideable-close-label">&times;</label>
+		<div class="ll-hideable-content">This is a great message This is a great message This is a great message This is a great message</div>
+	</div>
+
+	<div class="ll-hideable success">
+		<input type="checkbox" id="ll-hideable-close-2" class="ll-hideable-close" />
+		<label for="ll-hideable-close-2" class="ll-hideable-close-label">&#10006;</label>
+		<div class="ll-hideable-content">This is a great message This is a great message This is a great message This is a great message</div>
+	</div>
+</body>
+</html>

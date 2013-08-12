@@ -1,0 +1,20 @@
+.ll-hideable-close {
+	visibility: hidden;
+}
+
+.ll-hideable {
+	position: relative;
+}
+
+.ll-hideable-close-label {
+	position: absolute;
+	right: 1em;
+	top: 1.7em;
+	cursor: pointer;
+}
+
+.ll-hideable-close:checked,
+.ll-hideable-close:checked ~ .ll-hideable-close-label,
+.ll-hideable-close:checked ~ .ll-hideable-content {
+	display: none;
+}
